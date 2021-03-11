@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csspagina2.css">
+  <link rel="stylesheet" href="Iconos/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          $('u').css({
+            "opacity": "1", "pointer-events": "auto"
+          });
+        } else {
+          $('u').css({
+            "opacity": "0", "pointer-events": "none"
+          });
+        }
+      });
+      $('u').click(function () {
+
+        $('html').animate({ scrollTop: 0 }, 500);
+      });
+    });
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <u class="flecha fas fa-chevron-up"></u>
+  <nav>
+    <input type="checkbox" id="check">
+
+    <label for="check" class="checkbtn">
+
+      <i class="fas fa-bars"></i>
+
+    </label>
+
+    <label class="logo"> InnovaSoft<span id="lini">-</span>YJ</label>
+
+    <ul>
+      <li><a class="active" href="pagina 2 oficial.html">Principal</a> </li>
+      <li><a href="#aaa">Acerca de</a> </li>
+      <li><a href="#ser">servicios</a> </li>
+      <li><a href="BLOG/blogprueba.php">Blog</a> </li>
+      <li><a href="#ccc">Contactos</a> </li>
+
+    </ul>
+  </nav>
+
+  <header id="emcabezado">
+    <div class="padre">
+      <div class="hijo">
+
+        <e class="on fas fa-power-off"></e>
+        <br><br>
+        <h1>BIENVENIDO A INNOVASOFT</h1><br>
+        <hr><br>
+        <h3>Lideres en Tecnología</h3>
+
+      </div>
+    </div>
+
+  </header>
+
+  <a name="aaa">
+    <section class="aserca">
+      <div id="aser">
+        <h2>¿Que es InnovaSoft?</h2><br>
+        <hr>
+      </div>
+    </section>
+  </a>
+
+  <a name="ser">
+    <section class="servicios">
+      <div id="servis">
+        <h2>¿Que te ofrece InnovaSoft YJ?</h2><br>
+        <hr>
+      </div>
+    </section>
+  </a>
+
+  <a name="ccc">
+    <section class="contactos">
+
+      <div id="contac">
+        <h2>Contactos</h2><br>
+        <hr>
+      </div>
+    </section>
+  </a>
+
+
+
+
+
+  <footer>
+    <p>Hola</p>
+  </footer>
+</body>
+
+</html>
